@@ -36,4 +36,34 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .profile-border{
+    box-shadow: 4px 0px 20px 5px rgba(0, 0, 0, .3)
+  }
+  .latest-projects-border{
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, .3);
+    border: 1px solid #000;
+    border-radius: 8px;
+    overflow:hidden;
+    transition: .3s ease all;
+    top:0;
+    position: relative;
+    cursor: pointer;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .animate-aboutImage{
+      transform: translateX(30%);
+      animation-timeline: view();
+      animation-range-start: 200px;
+      animation-range-end: 400px;
+    }
+    .animate-aboutDescription{
+      opacity:0;
+      transform: translateX(-30%);
+      animation-timeline: view();
+      animation-range-start: 200px;
+      animation-range-end: 400px;
+      
+    }
+  }
+  
 }

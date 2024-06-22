@@ -18,12 +18,13 @@ export default function Home() {
         <section id="intro-banner" className="py-4">   
           <Banner bannerData={siteData} />
         </section>
-        <section id="about-us" className="py-4">
-          <AboutUs />
-        </section>
         <section id="latest-projects" className="py-4">
           <LatestProjects />
         </section>
+        <section id="about-us" className="py-4">
+          <AboutUs />
+        </section>
+        
         <section id="contact-us" className="py-4">
           <ContactUs />
         </section>

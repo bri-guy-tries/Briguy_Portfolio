@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={inter.className}>
-        <header className="w-full bg-[#002d72] sticky">
+        <header className="w-full bg-[#002d72] sticky top-0 z-20">
           <div className="max-w-screen-xl mx-auto p-4 flex">
             <div className="logo mr-auto"><img src="https://placehold.co/50" alt="profile image" /></div>
             <nav className="navigation text-white self-center">

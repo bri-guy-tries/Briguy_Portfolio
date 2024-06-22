@@ -18,10 +18,21 @@ const config: Config = {
         loop:{
           '0%': {transform: 'translateX(0%)'},
           '100%': {transform: 'translateX(-50%)'}
+        },
+        aboutImage:{
+          'to': {transform: 'translateX(0)'}
+        },
+        aboutDescription:{
+          'to': {
+            opacity: '1',
+            transform: 'translateX(0)'
+          }
         }
       },
       animation:{
-        loop:'loop linear infinite var(--duration) var(--direction)'
+        loop:'loop linear infinite var(--duration) var(--direction)',
+        aboutImage: 'aboutImage linear forwards',
+        aboutDescription: 'aboutDescription linear forwards'
       },
     },
   },

@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model projects {
+  project_id        Decimal  @id @db.Decimal(10, 0)
+  project_name      String   @db.VarChar(200)
+  project_date      DateTime @db.Date
+  desktop_image     String   @db.VarChar(200)
+  thumbnail_image   String   @db.VarChar(200)
+  alt_text          String?  @db.VarChar(500)
+  description_short String   @db.VarChar(500)
+  description_long  String   @db.VarChar(1000)
+}
+
+model aboutus {
+  id          Decimal @id @unique(map: "id") @db.Decimal(10, 0)
+  headline    String? @db.VarChar(100)
+  srcImage    String  @db.VarChar(200)
+  altText     String  @db.VarChar(200)
+  description String? @db.VarChar(1000)
+}
